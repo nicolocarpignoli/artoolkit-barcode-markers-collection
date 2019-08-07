@@ -1,19 +1,18 @@
 # Artoolkit Barcode Markers collection
 
-A collection of Artoolkit Barcode markers ready to use.
+A collection of ready-to-use Barcode markers.
 
-I created all possible markers for each kind of configuration.
+I created all markers for each kind of configuration.
 You can see the following table for details.
 
 Markers are on separate directories. Look out for directories name for marker configurations, and file names for the specific value of each barcode.
 
-I generated ONLY Barcode markers with an Hamming Distance greater than 0, otherwise they will be practically unusable.
+I generated only Barcode markers with an *Hamming Distance* greater than 0, otherwise they will be practically unusable.
+Just remember: the higher the *Hamming distance*, the better for recognization.
 
-Just remember: the higher the `Hamming distance`, the better for recognization.
+See [here](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md) for more details about Artoolkit's barcode markers theory.
 
-See [here](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md) for more details about that.
-
-## Available markers:
+## Available markers
 
 | Matrix code type                     | Maximum number of markers  | Hamming distance |
 | ------------------------------------ | -------------------------- | ---------------- |
