@@ -20,8 +20,8 @@ See [here](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Trai
 | AR\_MATRIX\_CODE\_3x3\_HAMMING63     |  3x3_hamming_6_3                         | 8                          | 3                |
 | AR\_MATRIX\_CODE\_4x4\_BCH\_13\_9\_3 |  4x4_bch_13_9_3              | 512                        | 3                |
 | AR\_MATRIX\_CODE\_4x4\_BCH\_13\_5\_5 |  4x4_bch_13_5_5             | 32                         | 5                |
-| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_7\_7 |  5x5_bch_22_7_7              | 128                        | Unknown, surely > 0
-| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_12\_5 | 5x5_bch_22_12_5               | 4096                       | Unknown, surely > 0
+| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_7\_7 |  5x5_bch_22_7_7              | 128                        | 7
+| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_12\_5 | 5x5_bch_22_12_5               | 4096                       | 5
 
 # Learn more
 
@@ -33,6 +33,7 @@ See [here](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Trai
 
 * [JSArtoolkit5 from ArtoolkitX project](https://github.com/artoolkitx/jsartoolkit5)
 
+* [More informations about BCH and Hamming Distance relation - source code](https://gitlab.ida.liu.se/minnesmark/Minnesmark/blob/899a04de679477b59acbc0fbb114497229b9e05f/Minnesmark/ARToolKit/include/AR/ar.h)
 
 # Credits
 
