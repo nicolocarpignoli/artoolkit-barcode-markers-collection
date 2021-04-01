@@ -10,8 +10,8 @@ Markers are on separate folders. Look out for folder name for marker configurati
 I generated only Barcode markers with an *Hamming Distance* greater than 0, otherwise they will be practically unusable.
 Just remember: the higher the *Hamming distance*, the better for recognization.
 
-*Important*
-Keep in mind that when you add this spec on your AR.js scene: `...detectionMode: mono_and_matrix; matrixCodeType: 3x3;’` you are using the `AR\_MATRIX\_CODE\_3x3` (so refer to the markers inside the "3x3" folder on this repo).
+**Important**
+Keep in mind that when you add this spec on your AR.js scene: `...detectionMode: mono_and_matrix; matrixCodeType: 3x3;’` you are using the `AR_MATRIX_CODE_3x3` (so refer to the markers inside the "3x3" folder on this repo).
 
 ## Is there a live version of a barcode marker generator?
 
