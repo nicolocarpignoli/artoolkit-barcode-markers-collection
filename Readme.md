@@ -10,12 +10,20 @@ Markers are on separate folders. Look out for folder name for marker configurati
 I generated only Barcode markers with an *Hamming Distance* greater than 0, otherwise they will be practically unusable.
 Just remember: the higher the *Hamming distance*, the better for recognization.
 
-See [here](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md) for more details about Artoolkit's barcode markers theory.
+*Important*
+Keep in mind that when you add this spec on your AR.js scene: `...detectionMode: mono_and_matrix; matrixCodeType: 3x3;’` you are using the `AR\_MATRIX\_CODE\_3x3` (so refer to the markers inside the "3x3" folder on this repo).
+
+## Is there a live version of a barcode marker generator?
+
+Yes, there is: [https://au.gmented.com/app/marker/marker.php](https://au.gmented.com/app/marker/marker.php)
+
+But it is not open source and who knows for how long it will remain online. So for now it works. In case it stops working, you can still use the markers on this repo.
 
 ## Available markers
 
 | Matrix code type                     | Folder name                 | Maximum number of markers  | Hamming distance |
 | ------------------------------------ | --------------------------  | -------------------------- | ---------------- |
+| AR\_MATRIX\_CODE\_3x3      |  3x3                           | 64                         |                 |
 | AR\_MATRIX\_CODE\_3x3\_PARITY65      |  3x3_parity_6_5                           | 32                         | 1                |
 | AR\_MATRIX\_CODE\_3x3\_HAMMING63     |  3x3_hamming_6_3                         | 8                          | 3                |
 | AR\_MATRIX\_CODE\_4x4\_BCH\_13\_9\_3 |  4x4_bch_13_9_3              | 512                        | 3                |
@@ -25,9 +33,7 @@ See [here](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Trai
 
 # Learn more
 
-* [Theory behind Barcode Markers](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)
-
-* [Online Barcode Markers Generator - NOT open source so far, but still free](http://au.gmented.com/app/marker/marker.php)
+* [Theory behind Barcode Markers](https://github.com/nicolocarpignoli/artoolkit-docs)
 
 * [Artoolkit5](https://github.com/artoolkit/artoolkit5)
 
