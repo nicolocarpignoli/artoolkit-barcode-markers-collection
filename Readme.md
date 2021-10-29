@@ -30,7 +30,7 @@ But it is not open source and who knows for how long it will remain online. So f
 
 | Matrix code type                     | Folder name                 | Maximum number of markers  | Hamming distance |  AR.js 3 support |
 | ------------------------------------ | --------------------------  | -------------------------- | ---------------- | ---------------- |
-| AR\_MATRIX\_CODE\_3x3      |  3x3                           | 64                         |                 | yes |
+| AR\_MATRIX\_CODE\_3x3      |  3x3                           | 64                         |        0         | yes |
 | AR\_MATRIX\_CODE\_3x3\_PARITY65      |  3x3_parity_6_5                           | 32                         | 1                | yes |
 | AR\_MATRIX\_CODE\_3x3\_HAMMING63     |  3x3_hamming_6_3                         | 8                          | 3                | yes |
 | AR\_MATRIX\_CODE\_4x4\_BCH\_13\_9\_3 |  4x4_bch_13_9_3              | 512                        | 3                | yes |
