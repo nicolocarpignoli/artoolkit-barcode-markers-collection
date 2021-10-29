@@ -11,7 +11,14 @@ I generated only Barcode markers with an *Hamming Distance* greater than 0, othe
 Just remember: the higher the *Hamming distance*, the better for recognization.
 
 **Important**
+
 Keep in mind that when you add this spec on your AR.js scene: `...detectionMode: mono_and_matrix; matrixCodeType: 3x3;’` you are using the `AR_MATRIX_CODE_3x3` (so refer to the markers inside the "3x3" folder on this repo).
+
+**Also important**
+
+As for now, on AR.js 3.3.3 (and older versions) the only barcode markers that are supported are 3x3 and 4x4, NOT 5x5.
+For more details, you can check the supported mapped version here:
+https://github.com/artoolkitx/jsartoolkit5/blob/244b2b23286403e78fa24805b34509dc5a88052f/emscripten/ARBindEM.cpp#L125-L130
 
 ## Is there a live version of a barcode marker generator?
 
@@ -21,15 +28,15 @@ But it is not open source and who knows for how long it will remain online. So f
 
 ## Available markers
 
-| Matrix code type                     | Folder name                 | Maximum number of markers  | Hamming distance |
-| ------------------------------------ | --------------------------  | -------------------------- | ---------------- |
-| AR\_MATRIX\_CODE\_3x3      |  3x3                           | 64                         |                 |
-| AR\_MATRIX\_CODE\_3x3\_PARITY65      |  3x3_parity_6_5                           | 32                         | 1                |
-| AR\_MATRIX\_CODE\_3x3\_HAMMING63     |  3x3_hamming_6_3                         | 8                          | 3                |
-| AR\_MATRIX\_CODE\_4x4\_BCH\_13\_9\_3 |  4x4_bch_13_9_3              | 512                        | 3                |
-| AR\_MATRIX\_CODE\_4x4\_BCH\_13\_5\_5 |  4x4_bch_13_5_5             | 32                         | 5                |
-| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_7\_7 |  5x5_bch_22_7_7              | 128                        | 7
-| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_12\_5 | 5x5_bch_22_12_5               | 4096                       | 5
+| Matrix code type                     | Folder name                 | Maximum number of markers  | Hamming distance |  AR.js 3 support |
+| ------------------------------------ | --------------------------  | -------------------------- | ---------------- | ---------------- |
+| AR\_MATRIX\_CODE\_3x3      |  3x3                           | 64                         |                 | yes |
+| AR\_MATRIX\_CODE\_3x3\_PARITY65      |  3x3_parity_6_5                           | 32                         | 1                | yes |
+| AR\_MATRIX\_CODE\_3x3\_HAMMING63     |  3x3_hamming_6_3                         | 8                          | 3                | yes |
+| AR\_MATRIX\_CODE\_4x4\_BCH\_13\_9\_3 |  4x4_bch_13_9_3              | 512                        | 3                | yes |
+| AR\_MATRIX\_CODE\_4x4\_BCH\_13\_5\_5 |  4x4_bch_13_5_5             | 32                         | 5                | yes |
+| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_7\_7 |  5x5_bch_22_7_7              | 128                        | 7 | no|
+| AR\_MATRIX\_CODE\_5x5\_BCH\_22\_12\_5 | 5x5_bch_22_12_5               | 4096                       | 5 | no |
 
 # Learn more
 
