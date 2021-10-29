@@ -40,7 +40,7 @@ But it is not open source and who knows for how long it will remain online. So f
 
 # Learn more
 
-* [Theory behind Barcode Markers](https://github.com/nicolocarpignoli/artoolkit-docs)
+* [Theory behind Barcode Markers](https://github.com/nicolocarpignoli/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)
 
 * [Artoolkit5](https://github.com/artoolkit/artoolkit5)
 
