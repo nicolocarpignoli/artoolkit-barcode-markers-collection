@@ -14,6 +14,13 @@ Just remember: the higher the *Hamming distance*, the better for recognization.
 
 Keep in mind that when you add this spec on your AR.js scene: `...detectionMode: mono_and_matrix; matrixCodeType: 3x3;’` you are using the `AR_MATRIX_CODE_3x3` (so refer to the markers inside the "3x3" folder on this repo).
 
+Other values can be set this way:
+
+```
+type of matrix code - valid iif detectionMode end with 'matrix' - [3x3, 3x3_HAMMING63, 3x3_PARITY65, 4x4, 4x4_BCH_13_9_3, 4x4_BCH_13_5_5]
+matrixCodeType: '3x3'
+```
+
 **Also important**
 
 As for now, on AR.js 3.3.3 (and older versions) the only barcode markers that are supported are 3x3 and 4x4, NOT 5x5.
